@@ -19,7 +19,7 @@ function Movie() {
     <div>
       <NavBar />
       <h1>{movie.title}</h1>
-      <p>{movie.time} minutes</p>
+      <p>{movie.time}</p>
       {movie.genres.map((genre, index) => (
         <span key={index}>{genre} </span>
       ))}
