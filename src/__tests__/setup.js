@@ -1,9 +1,8 @@
-import { afterEach } from 'vitest'
-import { cleanup } from '@testing-library/react'
-import '@testing-library/jest-dom/vitest'
+import { afterEach } from '@jest/globals';
+import { cleanup } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import 'whatwg-fetch';
-import {Blob} from 'node:buffer';
 
 afterEach(() => {
     cleanup();
-})
+});
