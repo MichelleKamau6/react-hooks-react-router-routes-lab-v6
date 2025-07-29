@@ -32,7 +32,7 @@ const router = createMemoryRouter(routes, {
 })
 
 test("renders without any errors", () => {
-  const errorSpy = jest.spyOn(global.console, "error");
+  const errorSpy = vi.spyOn(global.console, "error");
 
   render(<RouterProvider router={router}/>);
 
